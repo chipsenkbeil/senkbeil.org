@@ -1,8 +1,7 @@
 +++
 title = "Design to Embrace Change"
 description = """\
-A short discussion on Ruby design with object oriented programming.\
-"""
+A short discussion on Ruby design with object oriented programming."""
 date = "2013-10-26"
 tags = [ "ruby", "oop" ]
 categories = [ "language", "design" ]
@@ -38,33 +37,33 @@ better alternative - although not perfect, as you will see later.
 
 #### 1.a Poor Design Choice ####
 
-```language-ruby
-    class Rectangle
-        def initialize(width, length)
-            @width = width
-            @length = length
-        end
-
-        def area
-            @width * @length    # <-- poor design
-        end
+```ruby
+class Rectangle
+    def initialize(width, length)
+        @width = width
+        @length = length
     end
+
+    def area
+        @width * @length    # <-- poor design
+    end
+end
 ```
 
 #### 1.b Better Design Choice ####
 
-```language-ruby
-    class Rectangle
-        attr_reader :width, :length
-        def initialize(width, length)
-            @width = width
-            @length = length
-        end
-
-        def area
-            width * length      # <-- better design
-        end
+```ruby
+class Rectangle
+    attr_reader :width, :length
+    def initialize(width, length)
+        @width = width
+        @length = length
     end
+
+    def area
+        width * length      # <-- better design
+    end
+end
 ```
 
 #### Why is this better? ####
@@ -72,14 +71,14 @@ better alternative - although not perfect, as you will see later.
 The shorthand *attr_reader* simply wraps the references to instance variables
 in getter methods with the same name. E.g.
 
-```language-ruby
-    def width
-        @width
-    end
+```ruby
+def width
+    @width
+end
 
-    def length
-        @length
-    end
+def length
+    @length
+end
 ```
 
 You might ask why bother doing this? Well, for one, it saves you the headache
@@ -98,17 +97,17 @@ ahead of myself, let me first provide an example of a leaky abstraction.
 
 #### 2.a Leaky Abstraction ####
 
-```language-ruby
-    class ObscuringReferences
-        attr_reader :data
-        def initialize(data)
-            @data = data
-        end
-
-        def introduce_self
-            "Hi, my name is #{data[0]} and I am #{data[1]}."
-        end
+```ruby
+class ObscuringReferences
+    attr_reader :data
+    def initialize(data)
+        @data = data
     end
+
+    def introduce_self
+        "Hi, my name is #{data[0]} and I am #{data[1]}."
+    end
+end
 ```
 
 The above poses a maintainability issue. The code is written where the 
@@ -120,24 +119,24 @@ then need to be altered to match the data structure change.
 
 #### 2.b Fixed Abstraction ####
 
-```language-ruby
-    class RevealingReferences
-        attr_reader :person
-        def initialize(data)
-            @person = personalize(data)
-        end
-
-        def introduce_self
-            "Hi, my name is #{person.name} and I am #{person.description}"
-        end
-
-        # ...
-
-        Person = Struct.new(:name, :description)
-        def personalize(data)
-            Person.new(data[0], data[1])
-        end
+```ruby
+class RevealingReferences
+    attr_reader :person
+    def initialize(data)
+        @person = personalize(data)
     end
+
+    def introduce_self
+        "Hi, my name is #{person.name} and I am #{person.description}"
+    end
+
+    # ...
+
+    Person = Struct.new(:name, :description)
+    def personalize(data)
+        Person.new(data[0], data[1])
+    end
+end
 ```
 
 Now we have something neat! The author brings up *[Struct][struct]*, a way to 
@@ -168,19 +167,19 @@ only perform a single task.
 
 #### 3.a Too Much Functionality ####
 
-```language-ruby
-    class RectangularPrism
-        attr_reader :width, :length, :height
-        def initialize(width, length, height)
-            @width = width
-            @length = length
-            @height = height
-        end
-
-        def volume
-            width * length * height
-        end
+```ruby
+class RectangularPrism
+    attr_reader :width, :length, :height
+    def initialize(width, length, height)
+        @width = width
+        @length = length
+        @height = height
     end
+
+    def volume
+        width * length * height
+    end
+end
 ```
 
 I am fairly bad with examples - and I wanted to avoid using the book's
@@ -192,23 +191,23 @@ and the volume, which is too much functionality.
 
 #### 3.b Separated Functionality ####
 
-```language-ruby
-    class RectangularPrism
-        attr_reader :width, :length, :height
-        def initialize(width, length, height)
-            @width = width
-            @length = length
-            @height = height
-        end
-
-        def volume
-            area * height
-        end
-
-        def area
-            width * length
-        end
+```ruby
+class RectangularPrism
+    attr_reader :width, :length, :height
+    def initialize(width, length, height)
+        @width = width
+        @length = length
+        @height = height
     end
+
+    def volume
+        area * height
+    end
+
+    def area
+        width * length
+    end
+end
 ```
 
 
