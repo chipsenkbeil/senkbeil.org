@@ -1,3 +1,19 @@
-baseurl = "http://senkbeil.org"
-languageCode = "en-us"
-title = "senkbeil.org"
+baseurl             = "http://senkbeil.org"
+languageCode        = "en-us"
+title               = "senkbeil.org"
+paginate            = 6
+description         = "Blog and projects for Chip Senkbeil"
+theme               = "material-lite"
+buildDrafts         = true
+buildFuture         = true
+
+[params]
+    author          = "Chip Senkbeil"
+    description     = "Blog and projects for Chip Senkbeil"
+    background      = "images/background.jpg"
+    primary         = "indigo"
+    accent          = "pink"
+    TwitterUser     = "ChipSenkbeil"
+    GooglePlusUser  = "ChipSenkbeil"
+    copyright       = "&copy; Chip Senkbeil 2015"
+
