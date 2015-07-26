@@ -241,11 +241,11 @@ terms of over-commenting. Looking back, I find myself extra guilty of
 providing a plethura of comments within my functions/methods, many of which
 were written cleanly enough where no additional explanation was needed.
 
-[book]: <http://www.amazon.com/Practical-Object-Oriented-Design-Ruby-Addison-Wesley-ebook/dp/B0096BYG7C>
-[oop]: <http://en.wikipedia.org/wiki/Object-oriented_programming>
-[la]: <http://en.wikipedia.org/wiki/Leaky_abstraction>
-[struct]: <http://www.ruby-doc.org/core-2.0.0/Struct.html>
-[lcs]: </docs/linus_coding_style.txt>
-[kos]: <http://gamedev.allusion.net/softprj/kos/>
-[dcs]: </docs/dreamcast_coding_style.txt>
+[book]: http://www.amazon.com/Practical-Object-Oriented-Design-Ruby-Addison-Wesley-ebook/dp/B0096BYG7C
+[oop]: http://en.wikipedia.org/wiki/Object-oriented_programming
+[la]: http://en.wikipedia.org/wiki/Leaky_abstraction
+[struct]: http://www.ruby-doc.org/core-2.0.0/Struct.html
+[lcs]: https://www.kernel.org/doc/Documentation/CodingStyle
+[kos]: http://gamedev.allusion.net/softprj/kos/
+[dcs]: /docs/dreamcast_coding_style.txt
 
