@@ -1,0 +1,3 @@
+[submodule "themes/material-lite"]
+	path = themes/material-lite
+	url = https://github.com/SamuelDebruyn/hugo-material-lite.git
