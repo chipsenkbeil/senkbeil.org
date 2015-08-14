@@ -25,7 +25,7 @@ theme = "grid-side"
         name = "Chip Senkbeil"
         description = "Computer Engineer/Scientist/Maniac"
         email = "chip.senkbeil@gmail.com"
-        image = "profile.png"
+        image = "/img/profile.jpg"
         #color = "#FFF"
 
     [Params.About]
@@ -81,7 +81,7 @@ theme = "grid-side"
             name = "Blog"
             description = "Your personal blog"
             link = "/blog/"
-            image = "blog.png"
+            image = "/img/tmp/car.jpg"
             always_show_text = true
             #color = "#FFF"
             #cell_large = 4
@@ -93,7 +93,8 @@ theme = "grid-side"
             name = "Super Mega Awesometastic Feature of the Week"
             description = ""
             link = ""
-            image = ""
+            image = "/img/tmp/cup.jpg"
+            #height = "66vh"
             #color = "#FFF"
             #cell_large = 4
             #cell_medium = 6
@@ -104,7 +105,7 @@ theme = "grid-side"
             name = "Something on only two lines"
             description = ""
             link = ""
-            image = ""
+            image = "/img/tmp/drone.jpg"
             #color = "#FFF"
             #cell_large = 4
             #cell_medium = 6
@@ -115,7 +116,7 @@ theme = "grid-side"
             name = ""
             description = ""
             link = ""
-            image = ""
+            image = "/img/tmp/food.jpg"
             #color = "#FFF"
             #cell_large = 4
             #cell_medium = 6
@@ -126,7 +127,7 @@ theme = "grid-side"
             name = ""
             description = ""
             link = ""
-            image = ""
+            image = "/img/tmp/jars.jpg"
             #color = "#FFF"
             #cell_large = 4
             #cell_medium = 6
@@ -137,7 +138,7 @@ theme = "grid-side"
             name = ""
             description = ""
             link = ""
-            image = ""
+            image = "/img/tmp/phone.jpg"
             #color = "#FFF"
             #cell_large = 4
             #cell_medium = 6
@@ -145,12 +146,15 @@ theme = "grid-side"
 
         [[Params.Cells.List]]
 
-            name = ""
+            name = "Something"
             description = ""
             link = ""
-            image = ""
+            image = "/img/tmp/poster.jpg"
             #color = "#FFF"
-            #cell_large = 4
-            #cell_medium = 6
-            #cell_small = 12
+
+            [Params.Cells.List.Size]
+
+                large = 12
+                medium = 12
+                #small = 12
 
