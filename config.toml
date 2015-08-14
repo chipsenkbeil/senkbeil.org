@@ -38,8 +38,23 @@ theme = "grid-side"
 
         [[Params.Footer.List]]
 
+            icon_class = "twitter"
+            icon_link = "https://twitter.com/ChipSenkbeil"
+
+        [[Params.Footer.List]]
+
+            icon_class = "linkedin"
+            icon_link = "https://www.linkedin.com/in/robertsenkbeil"
+
+        [[Params.Footer.List]]
+
+            icon_class = "google-plus"
+            icon_link = "https://www.google.com/+ChipSenkbeil"
+
+        [[Params.Footer.List]]
+
             icon_class = "github"
-            icon_link = "http://www.github.com/rcsenkbeil"
+            icon_link = "https://www.github.com/rcsenkbeil"
 
     #
     # Contains the Cells representing the sections of your website. Each cell
