@@ -4,6 +4,7 @@ description = "Writeup about brief work on XMonad-like key bindings for tmux."
 date = "2013-12-24"
 tags = [ "tmux", "xmonad" ]
 categories = [ "tool" ]
+image = "/img/profile.jpg"
 +++
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean elit velit, euismod sit amet cursus sed, malesuada at quam. Morbi accumsan id mi at dapibus. Fusce quis quam sed nibh tristique commodo. Mauris semper ligula sapien, quis scelerisque ex mollis eget. Aenean sollicitudin elit eget lectus dapibus, et faucibus elit bibendum. Praesent dapibus dui sit amet dolor tristique, a elementum dui cursus. Quisque at pellentesque velit. Morbi et sapien quis ipsum pharetra bibendum vitae at nisi. Maecenas a sollicitudin leo, condimentum tempus quam.
