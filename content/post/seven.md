@@ -1,5 +1,6 @@
 +++
-title = "one"
+title = "seven"
+weight = 7
 description = "Writeup about brief work on XMonad-like key bindings for tmux."
 date = "2013-12-24"
 tags = [ "tmux", "xmonad" ]
