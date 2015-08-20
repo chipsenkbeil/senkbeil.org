@@ -28,10 +28,6 @@ theme = "grid-side"
         image = "/img/profile.jpg"
         #color = "#FFF"
 
-    [Params.About]
-
-        icon = "face"
-
     [Params.Footer]
 
         name = "Chip Senkbeil"
