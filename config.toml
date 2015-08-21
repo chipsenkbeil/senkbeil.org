@@ -76,7 +76,7 @@ theme = "grid-side"
 
             name = "Blog"
             description = "Your personal blog"
-            link = "/blog/"
+            link = "/post/"
             image = "/img/tmp/car.jpg"
             #always_show_text = true
             #color = "#FFF"
