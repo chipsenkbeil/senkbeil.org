@@ -3,6 +3,39 @@ baseurl = "http://replace-this-with-your-hugo-site.com/"
 languageCode = "en-us"
 title = "GridSide"
 theme = "grid-side"
+SectionPagesMenu = "main"
+paginate = 12
+PygmentsCodeFences = true
+
+[[menu.main]]
+    name = "about hugo"
+    pre = "<i class='fa fa-heart'></i>"
+    weight = -110
+    identifier = "about"
+    url = "/about/"
+[[menu.main]]
+    name = "getting started"
+    pre = "<i class='fa fa-road'></i>"
+    weight = -100
+    url = "/getting-started/"
+[[menu.main]]
+    name = "a"
+    pre = "<i class='fa fa-road'></i>"
+    weight = -100
+    url = "/getting-started/"
+[[menu.main]]
+    parent = "getting started"
+    name = "about hugo 2"
+    pre = "<i class='fa fa-heart'></i>"
+    weight = -110
+    identifier = "about"
+    url = "/about/"
+[[menu.main]]
+    parent = "about hugo"
+    name = "getting started 2"
+    pre = "<i class='fa fa-road'></i>"
+    weight = -100
+    url = "/getting-started/"
 
 [Params]
 
