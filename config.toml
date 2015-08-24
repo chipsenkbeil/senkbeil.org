@@ -117,6 +117,7 @@ PygmentsCodeFences = true
             description = "Your personal blog"
             link = "/post/"
             image = "/img/tmp/car.jpg"
+            grayscale = true
 
         [[Params.Cells.List]]
 
