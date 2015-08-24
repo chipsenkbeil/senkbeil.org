@@ -1,8 +1,9 @@
 # Site settings
-baseurl = "http://replace-this-with-your-hugo-site.com/"
+baseurl = "http://senkbeil.org/"
 languageCode = "en-us"
-title = "GridSide"
+title = "Senkbeil"
 theme = "grid-side"
+copyright = "Copyright &#169; by Chip Senkbeil"
 SectionPagesMenu = "main"
 paginate = 12
 PygmentsCodeFences = true
@@ -47,6 +48,10 @@ PygmentsCodeFences = true
     description = "Your description"
     email = "your@email.com"
 
+    [Params.Highlight]
+
+        style = "railscasts"
+
     #
     # Contains the main grid cell of your site (such as a picture of yourself)
     # along with your name, description, and email. Any empty field will
@@ -59,6 +64,7 @@ PygmentsCodeFences = true
         description = "Computer Engineer/Scientist/Maniac"
         email = "chip.senkbeil@gmail.com"
         image = "/img/profile.jpg"
+        image_position = "top"
         #color = "#FFF"
 
     [Params.Footer]
@@ -111,11 +117,6 @@ PygmentsCodeFences = true
             description = "Your personal blog"
             link = "/post/"
             image = "/img/tmp/car.jpg"
-            #always_show_text = true
-            #color = "#FFF"
-            #cell_large = 4
-            #cell_medium = 6
-            #cell_small = 12
 
         [[Params.Cells.List]]
 
@@ -123,11 +124,6 @@ PygmentsCodeFences = true
             description = ""
             link = ""
             image = "/img/tmp/cup.jpg"
-            #height = "66vh"
-            #color = "#FFF"
-            #cell_large = 4
-            #cell_medium = 6
-            #cell_small = 12
 
         [[Params.Cells.List]]
 
@@ -135,10 +131,6 @@ PygmentsCodeFences = true
             description = ""
             link = ""
             image = "/img/tmp/drone.jpg"
-            #color = "#FFF"
-            #cell_large = 4
-            #cell_medium = 6
-            #cell_small = 12
 
         [[Params.Cells.List]]
 
@@ -146,10 +138,6 @@ PygmentsCodeFences = true
             description = ""
             link = ""
             image = "/img/tmp/food.jpg"
-            #color = "#FFF"
-            #cell_large = 4
-            #cell_medium = 6
-            #cell_small = 12
 
         [[Params.Cells.List]]
 
@@ -157,10 +145,6 @@ PygmentsCodeFences = true
             description = ""
             link = ""
             image = "/img/tmp/jars.jpg"
-            #color = "#FFF"
-            #cell_large = 4
-            #cell_medium = 6
-            #cell_small = 12
 
         [[Params.Cells.List]]
 
@@ -168,10 +152,6 @@ PygmentsCodeFences = true
             description = ""
             link = ""
             image = "/img/tmp/phone.jpg"
-            #color = "#FFF"
-            #cell_large = 4
-            #cell_medium = 6
-            #cell_small = 12
 
         [[Params.Cells.List]]
 
@@ -179,11 +159,4 @@ PygmentsCodeFences = true
             description = ""
             link = ""
             image = "/img/tmp/poster.jpg"
-            #color = "#FFF"
-
-            [Params.Cells.List.Size]
-
-                large = 12
-                medium = 12
-                #small = 12
 
