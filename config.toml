@@ -114,9 +114,10 @@ PygmentsCodeFences = true
         [[Params.Cells.List]]
 
             name = "Blog"
-            description = "Your personal blog"
+            description = "My personal blog"
             link = "/post/"
             image = "/img/tmp/car.jpg"
+            #image_position = "top"
             #color = "blue"
             #grayscale = true
             #no_highlight = true
@@ -124,43 +125,36 @@ PygmentsCodeFences = true
 
         [[Params.Cells.List]]
 
-            name = "Super Mega Awesometastic Feature of the Week"
-            description = ""
-            link = ""
+            name = "Software"
+            description = "My personal and work software projects"
+            link = "/software/"
             image = "/img/tmp/cup.jpg"
 
         [[Params.Cells.List]]
 
-            name = "Something on only two lines"
-            description = ""
-            link = ""
+            name = "Hardware"
+            description = "My personal and work hardware projects"
+            link = "/hardware/"
             image = "/img/tmp/drone.jpg"
 
         [[Params.Cells.List]]
 
-            name = ""
-            description = ""
-            link = ""
+            name = "Talks"
+            description = "My talks given in academia or work"
+            link = "/talks/"
             image = "/img/tmp/food.jpg"
 
         [[Params.Cells.List]]
 
-            name = ""
-            description = ""
-            link = ""
+            name = "Snippets"
+            description = "Various snippets of code used for day-to-day tasks"
+            link = "/snippets/"
             image = "/img/tmp/jars.jpg"
 
         [[Params.Cells.List]]
 
-            name = ""
-            description = ""
-            link = ""
+            name = "Notes"
+            description = "Notes taken from day-to-day experiences"
+            link = "/notes/"
             image = "/img/tmp/phone.jpg"
-
-        [[Params.Cells.List]]
-
-            name = "Something"
-            description = ""
-            link = ""
-            image = "/img/tmp/poster.jpg"
 
