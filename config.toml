@@ -8,36 +8,6 @@ SectionPagesMenu = "main"
 paginate = 12
 PygmentsCodeFences = true
 
-[[menu.main]]
-    name = "about hugo"
-    pre = "<i class='fa fa-heart'></i>"
-    weight = -110
-    identifier = "about"
-    url = "/about/"
-[[menu.main]]
-    name = "getting started"
-    pre = "<i class='fa fa-road'></i>"
-    weight = -100
-    url = "/getting-started/"
-[[menu.main]]
-    name = "a"
-    pre = "<i class='fa fa-road'></i>"
-    weight = -100
-    url = "/getting-started/"
-[[menu.main]]
-    parent = "getting started"
-    name = "about hugo 2"
-    pre = "<i class='fa fa-heart'></i>"
-    weight = -110
-    identifier = "about"
-    url = "/about/"
-[[menu.main]]
-    parent = "about hugo"
-    name = "getting started 2"
-    pre = "<i class='fa fa-road'></i>"
-    weight = -100
-    url = "/getting-started/"
-
 [Params]
 
     #
@@ -116,7 +86,7 @@ PygmentsCodeFences = true
             name = "Blog"
             description = "My personal blog"
             link = "/post/"
-            image = "/img/tmp/car.jpg"
+            image = "/img/blog.jpg"
             #image_position = "top"
             #color = "blue"
             #grayscale = true
@@ -128,33 +98,45 @@ PygmentsCodeFences = true
             name = "Software"
             description = "My personal and work software projects"
             link = "/software/"
-            image = "/img/tmp/cup.jpg"
+            image = "/img/software.jpg"
 
         [[Params.Cells.List]]
 
             name = "Hardware"
             description = "My personal and work hardware projects"
             link = "/hardware/"
-            image = "/img/tmp/drone.jpg"
+            image = "/img/hardware.jpg"
+            disable = true
 
         [[Params.Cells.List]]
 
             name = "Talks"
             description = "My talks given in academia or work"
-            link = "/talks/"
-            image = "/img/tmp/food.jpg"
+            link = "/talk/"
+            image = "/img/talk.jpg"
+            image_position = "center"
+            disable = true
+
+        [[Params.Cells.List]]
+
+            name = "Pepper"
+            description = "Pictures and videos of my dog, Pepper"
+            link = "/pepper/"
+            image = "/img/pepper.jpg"
+            image_position = "top"
 
         [[Params.Cells.List]]
 
             name = "Snippets"
             description = "Various snippets of code used for day-to-day tasks"
-            link = "/snippets/"
-            image = "/img/tmp/jars.jpg"
+            link = "/snippet/"
+            image = "/img/snippet.jpg"
+            disable = true
 
         [[Params.Cells.List]]
 
             name = "Notes"
             description = "Notes taken from day-to-day experiences"
-            link = "/notes/"
-            image = "/img/tmp/phone.jpg"
+            link = "/note/"
+            image = "/img/note.jpg"
 
