@@ -95,6 +95,13 @@ PygmentsCodeFences = true
 
         [[Params.Cells.List]]
 
+            name = "Resumé"
+            description = "My resume"
+            link = "/resume/"
+            image = "/img/resume.jpg"
+
+        [[Params.Cells.List]]
+
             name = "Software"
             description = "My personal and work software projects"
             link = "/software/"
