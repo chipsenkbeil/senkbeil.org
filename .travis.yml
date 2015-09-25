@@ -1,0 +1,15 @@
+language: go
+go:
+    - 1.4
+env:
+    matrix:
+        - GOPATH=$TRAVIS_BUILD_DIR/gosrc
+install:
+    - mkdir -p "$TRAVIS_BUILD_DIR/gosrc"
+    - go get -v github.com/spf13/hugo
+script: make
+after_success:
+  - test $TRAVIS_PULL_REQUEST == "false" && \
+    test $TRAVIS_BRANCH == "master" && \
+    make push
+
