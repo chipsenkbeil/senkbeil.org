@@ -59,7 +59,7 @@ PygmentsCodeFences = true
         [[Params.Footer.List]]
 
             icon_class = "github"
-            icon_link = "https://www.github.com/rcsenkbeil"
+            icon_link = "https://www.github.com/chipsenkbeil"
 
     #
     # Contains the Cells representing the sections of your website. Each cell
