@@ -1,8 +1,8 @@
 +++
 date = "2015-09-02T16:52:27-05:00"
 title = "CSS Masonry Layout Attempts"
-tags = []
-categories = []
+tags = [ "css" ]
+categories = [ "experiment" ]
 +++
 
 I spent two days investigating this and could not find a solution that worked.
