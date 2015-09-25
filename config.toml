@@ -128,7 +128,7 @@ PygmentsCodeFences = true
 
             name = "Pepper"
             description = "Pictures and videos of my dog, Pepper"
-            link = "/pepper/"
+            link = "/gallery/"
             image = "/img/pepper.jpg"
             image_position = "top"
 
