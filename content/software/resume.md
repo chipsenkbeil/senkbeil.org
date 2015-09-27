@@ -1,5 +1,6 @@
 +++
 title = "Resume"
+weight = 300
 image = "/img/projects/resume.jpg"
 redirect = "https://github.com/chipsenkbeil/resume"
 tags = [ "resume", "open source", "latex" ]

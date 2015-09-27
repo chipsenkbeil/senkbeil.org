@@ -1,5 +1,6 @@
 +++
 title = "File Patcher"
+weight = 2010
 image = "/img/projects/file-patcher.jpg"
 redirect = "https://github.com/chipsenkbeil-academic/file-patcher"
 tags = [ "utility", "open source", "c#" ]

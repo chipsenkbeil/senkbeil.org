@@ -1,5 +1,6 @@
 +++
 title = "Spark Kernel"
+weight = 100
 image = "/img/projects/spark-kernel.jpg"
 redirect = "https://github.com/ibm-et/spark-kernel"
 tags = [ "library", "program", "open source", "scala", "akka", "apache spark" ]

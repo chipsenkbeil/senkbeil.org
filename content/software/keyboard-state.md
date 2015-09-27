@@ -1,5 +1,6 @@
 +++
 title = "Keyboard state"
+weight = 710
 image = "/img/projects/keyboard-state.jpg"
 redirect = "https://github.com/chipsenkbeil/get-keyboard-state"
 tags = [ "program", "open source", "c", "example" ]

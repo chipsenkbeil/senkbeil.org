@@ -1,5 +1,6 @@
 +++
 title = "RealFeel Game Engine"
+weight = 2000
 image = "/img/projects/realfeel-game-engine.jpg"
 redirect = "https://github.com/chipsenkbeil-academic/realfeel-game-engine"
 tags = [ "program", "open source", "vb6", "game engine" ]

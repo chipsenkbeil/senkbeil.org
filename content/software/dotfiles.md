@@ -1,5 +1,6 @@
 +++
 title = "Dot files"
+weight = 400
 image = "/img/projects/dot-files.jpg"
 redirect = "https://github.com/chipsenkbeil/dotfiles"
 tags = [ "configuration", "open source" ]

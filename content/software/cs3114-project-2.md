@@ -1,5 +1,6 @@
 +++
 title = "CS 3114 (Data Structures 2) - Project 2"
+weight = 1040
 image = "/img/projects/cs3114-project-2.jpg"
 redirect = "https://github.com/chipsenkbeil-academic/cs3114/tree/master/projects/02"
 tags = [ "project", "class assignment", "java" ]

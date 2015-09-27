@@ -1,5 +1,6 @@
 +++
 title = "ACM Website"
+weight = 700
 image = "/img/projects/acm-website.jpg"
 redirect = "https://github.com/chipsenkbeil-academic/acm"
 tags = [ "docpad", "html", "javascript", "css" ]

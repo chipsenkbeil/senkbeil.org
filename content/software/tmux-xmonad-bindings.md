@@ -1,5 +1,6 @@
 +++
 title = "tmux XMonad bindings"
+weight = 650
 image = "/img/projects/tmux-xmonad-bindings.jpg"
 redirect = "https://github.com/chipsenkbeil/tmux-xmonadbindings"
 tags = [ "utility", "open source", "tmux", "xmonad" ]

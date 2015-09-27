@@ -1,5 +1,6 @@
 +++
 title = "CS 4204 (Computer Graphics) - Project 4"
+weight = 920
 image = "/img/projects/cs4204-project-4.jpg"
 redirect = "https://github.com/chipsenkbeil-academic/cs4204/tree/master/projects/04"
 tags = [ "project", "class assignment", "c++", "opengl" ]
