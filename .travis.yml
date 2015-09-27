@@ -12,7 +12,5 @@ install:
 - go get -v github.com/spf13/hugo
 script: make
 after_success:
-- test $TRAVIS_PULL_REQUEST == "false" && \ 
-  test $TRAVIS_BRANCH == "master" && \ 
-  make push
+- test $TRAVIS_PULL_REQUEST == "false" && test $TRAVIS_BRANCH == "master" && make push
 
