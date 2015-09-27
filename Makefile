@@ -7,8 +7,8 @@ USER_NAME:="Chip Senkbeil"
 USER_EMAIL:="chip.senkbeil+travis@gmail.com"
 OUTPUT_DIR:="public/"
 
-BRANCH:="gh-pages"
-REPO:="github.com/chipsenkbeil/senkbeil.org.git"
+BRANCH:="master"
+REPO:="github.com/chipsenkbeil/chipsenkbeil.github.io.git"
 
 DOMAIN:="chipsenkbeil.com"
 CNAME:="$(DOMAIN)\nwww.$(DOMAIN)"
