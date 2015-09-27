@@ -3,7 +3,7 @@ title = "Overview of the Spark Kernel Client Library"
 date = "2015-07-29"
 redirect = "http://www.spark.tc/overview-of-the-spark-kernel-client-library/"
 image = "/img/work/spark-logo.png"
-tags = [ "apache", "spark", "open source" ]
+tags = [ "apache spark", "open source" ]
 categories = [ "ibm" ]
 +++
 

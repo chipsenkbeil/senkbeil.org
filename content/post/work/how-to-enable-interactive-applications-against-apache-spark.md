@@ -3,7 +3,7 @@ title = "How to enable interactive applications against Apache Spark"
 date = "2015-07-15"
 redirect = "http://www.spark.tc/how-to-enable-interactive-applications-against-apache-spark/"
 image = "/img/work/spark-logo.png"
-tags = [ "apache", "spark", "open source" ]
+tags = [ "apache spark", "open source" ]
 categories = [ "ibm" ]
 +++
 

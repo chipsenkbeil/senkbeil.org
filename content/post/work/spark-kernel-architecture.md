@@ -3,7 +3,7 @@ title = "Spark Kernel Architecture"
 date = "2015-07-22"
 redirect = "http://www.spark.tc/spark-kernel-architecture/"
 image = "/img/work/spark-logo.png"
-tags = [ "apache", "spark", "open source" ]
+tags = [ "apache spark", "open source" ]
 categories = [ "ibm" ]
 +++
 
