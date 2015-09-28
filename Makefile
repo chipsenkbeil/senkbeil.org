@@ -24,18 +24,17 @@ clean:
 build:
 	$(GOPATH)/bin/hugo --theme="grid-side"
 
-.ONESHELL:
 push:
-	cd $(OUTPUT_DIR)
-	git init
-	git config user.email $(USER_EMAIL)
-	git config user.name $(USER_NAME)
-	git remote add upstream "https://$(GH_TOKEN)@$(REPO)"
-	git fetch upstream
-	git reset upstream/$(BRANCH)
-	echo $(CNAME) > CNAME
-	touch .
-	git add -A
-	git commit -m "Rebuilt pages at $(REV)"
+	cd $(OUTPUT_DIR) && \
+	git init && \
+	git config user.email $(USER_EMAIL) && \
+	git config user.name $(USER_NAME) && \
+	git remote add upstream "https://$(GH_TOKEN)@$(REPO)" && \
+	git fetch upstream && \
+	git reset upstream/$(BRANCH) && \
+	echo $(CNAME) > CNAME && \
+	touch . && \
+	git add -A && \
+	git commit -m "Rebuilt pages at $(REV)" && \
 	git push -q upstream HEAD:$(BRANCH)
 
