@@ -24,6 +24,7 @@ clean:
 build:
 	$(GOPATH)/bin/hugo --theme="grid-side"
 
+.ONESHELL:
 push:
 	cd $(OUTPUT_DIR)
 	git init
