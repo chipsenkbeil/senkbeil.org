@@ -21,6 +21,10 @@ all: clean build
 clean:
 	rm -rf $(OUTPUT_DIR)
 
+update:
+	git pull origin master
+	(cd themes/grid-side/ && git checkout master && git pull origin master)
+
 build:
 	$(GOPATH)/bin/hugo --theme="grid-side"
 
