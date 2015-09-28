@@ -122,7 +122,6 @@ PygmentsCodeFences = true
             link = "/talk/"
             image = "/img/talk.jpg"
             image_position = "center"
-            disable = true
 
         [[Params.Cells.List]]
 
