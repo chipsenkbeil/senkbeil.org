@@ -4,9 +4,75 @@ languageCode = "en-us"
 title = "Senkbeil"
 theme = "grid-side"
 copyright = "Copyright &#169; by Chip Senkbeil"
-SectionPagesMenu = "main"
 paginate = 12
 PygmentsCodeFences = true
+
+# About section of menu
+[[Menu.Main]]
+    name = "About"
+    identifier = "about"
+    url = "#!"
+
+[[Menu.Main]]
+    name = "Pepper"
+    identifier = "pepper"
+    url = "/pepper/"
+    parent = "about"
+
+[[Menu.Main]]
+    name = "Resume"
+    identifier = "resume"
+    url = "/resume/"
+    parent = "about"
+
+# Blog section of menu
+[[Menu.Main]]
+    name = "Blog"
+    identifier = "blog"
+    url = "#!"
+
+[[Menu.Main]]
+    name = "Posts"
+    identifier = "posts"
+    url = "/post/"
+    parent = "blog"
+
+[[Menu.Main]]
+    name = "Talks"
+    identifier = "talks"
+    url = "/talk/"
+    parent = "blog"
+
+[[Menu.Main]]
+    name = "Notes"
+    identifier = "notes"
+    url = "/note/"
+    parent = "blog"
+
+[[Menu.Main]]
+    name = "Snippets"
+    identifier = "snippets"
+    url = "#!"
+    parent = "blog"
+
+# Projects section of menu
+[[Menu.Main]]
+    name = "Projects"
+    identifier = "projects"
+    url = "#!"
+
+[[Menu.Main]]
+    name = "Software"
+    identifier = "software"
+    url = "/software/"
+    parent = "projects"
+
+[[Menu.Main]]
+    name = "Hardware"
+    identifier = "hardware"
+    url = "#!"
+    parent = "projects"
+
 
 [Params]
 
