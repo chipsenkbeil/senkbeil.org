@@ -1,3 +1,6 @@
 [submodule "themes/material-lite"]
 	path = themes/material-lite
 	url = https://github.com/SamuelDebruyn/hugo-material-lite.git
+[submodule "themes/grid-side"]
+	path = themes/grid-side
+	url = https://github.com/chipsenkbeil/grid-side.git
