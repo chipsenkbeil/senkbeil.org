@@ -6,6 +6,7 @@ theme = "grid-side"
 copyright = "Copyright &#169; by Chip Senkbeil"
 paginate = 12
 PygmentsCodeFences = true
+disqusShortname = "chipsenkbeil.com"
 
 # About section of menu
 [[Menu.Main]]
