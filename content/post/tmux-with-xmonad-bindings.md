@@ -33,7 +33,9 @@ be more like XMonad.
 tmux provides multiple ways to rebind keys and perform startup actions. The
 first is to execute the actions from the terminal:
 
-    $tmux bind-key d kill-pane
+```raw
+tmux bind-key d kill-pane
+```
 
 Another option is to perform the task within a running tmux instance by
 entering `Ctrl-b :`, which enters a command mode for you to enter tmux actions.
@@ -42,21 +44,27 @@ Of course, these methods were not what I needed. What I discovered was that
 tmux could source a file to get its bindings. You could have `.tmux.conf`
 within your home directory or use
 
-    $tmux source my_tmux.conf
+```raw
+tmux source my_tmux.conf
+```
 
 For me, I began to work with the default `.tmux.conf` file. Keybindings were
 easy to rebind using `bind-key` and `unbind-key`. For instance, if I wanted
 to bind the space key to change the layout - XMonad uses `Mod-Space` by
 default - I would use the following:
 
-    bind-key Space next-layout
+```raw
+bind-key Space next-layout
+```
 
 However, a simple `bind-key` does not remove the prefix! This means that the
 above would actually be `Ctrl-b Space` as the combination. Luckily, tmux
 provides a way to avoid the prefix when performing actions. The `-n` switch
 indicates that no prefix should be used.
 
-    bind-key -n C-Space next-layout
+```raw
+bind-key -n C-Space next-layout
+```
 
 The above indicates that the series of keystrokes `Ctrl-Space` should change
 the layout used in tmux, no prefix needed.
@@ -85,8 +93,10 @@ At least, I did not believe that I could. I discovered that tmux provided even
 more functionality through the ability to not only launch shell programs but
 also check the return status of said programs!
 
-    # Run command if system is Mac OS X
-    if-shell 'test `uname` == "DARWIN"' <COMMAND> [OPTIONAL COMMAND]
+```raw
+# Run command if system is Mac OS X
+if-shell 'test `uname` == "DARWIN"' <COMMAND> [OPTIONAL COMMAND]
+```
 
 Because of this ability, I thought about having a small program that could be
 executed to indicate whether modifier keys like control and shift were
@@ -111,7 +121,8 @@ documentation indicates that Mac OS X v10.6+ is needed to use this
 functionality; so, this means my solution will only work for Snow Leopard or
 higher (sorry Leopard and Tiger).
 
-FILL IN
+You can find the small program bundled with the main project
+[here](/software/tmux-xmonad-bindings/).
 
 ### The Linux Solution ###
 
@@ -120,9 +131,18 @@ keyboard interface directly, rather than accessing information from a
 program. This meant accessing `/dev/my_keyboard_interface`, which would vary
 from computer to computer.
 
-FILL IN
+I wrote a small C program to demonstrate this functionality
+[here](/software/keyboard-state/).
+
+Unfortunately, after joining IBM in January of 2014, I was not able to
+continue pursuing this project.
 
 ### The Final Result ###
 
-FILL IN
+Overall, the configuration combined with the modifier keys captured by an
+external program successfully produced a working replica of XMonad's key
+bindings using tmux, giving me a more comfortable layout for moving
+panes and navigating.
+
+You can find the project [here](/software/tmux-xmonad-bindings/).
 
