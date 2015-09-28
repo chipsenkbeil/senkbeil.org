@@ -158,11 +158,12 @@ PygmentsCodeFences = true
             #grayscale = true
             #no_highlight = true
             #always_show_text = true
+            #disable = true
 
         [[Params.Cells.List]]
 
             name = "Resumé"
-            description = "My resume"
+            description = "My resumé"
             link = "/resume/"
             image = "/img/resume.jpg"
 
