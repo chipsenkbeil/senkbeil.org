@@ -12,7 +12,7 @@ env:
     secure: aBv6UjQ6idDMhhUYZnxdDtY32R9Jr3YTDnXSA+VjQHlHMFQ3quDB6D+7VRe9ePGSP9NvoUjS1+mjQU4Yh/Fg20u0qXSlxxUowdJr0bHzR537LaDn8YwdPPJKns25kVY3fOp3M+wFkx8IovMQgI4AxSjydIqYFxUSPwreG278HVNwXh9Y8/vYivEW73bo4Jav5LLTs4RzhbX5AP/rV3Hrrcxbel54znXxeyYeB/xHz3MQUR9XTKP//39wPa/ghgClS6nTGbaOUGRpr8+JxXxyEoI5cQSlb0G4pcsDGoyYXbSYZUdo8Hay/Z3lp63aBERXFyuiRF0fZGgln+UuL97WHI45MEhG0wJ0E4ZyJ6gojL3Y5gyGr/qI/AWK6ImgPf3MFd/pkIgb6VORUcsPn2RgchLqTAXVTsMaMnUg06HohfLdt/WJKQMbfVQYQsI+fAiROyzFN7KiJfJOcngV/cmqCKuoOuKrisyd3++TT4UdcyLoUBMeNFk152aHsomqC/gWlNUh8L5hbc+YSvqXjvO8heZcwL0cRCD81oRxrUtMZpYgqfsiyJ8KWIYHDDtPHPQqKEPiuQOZTnqEQgxTO26fYG1OeHXBeE6hWzUeF4veQ16q/aG0+fXQq/Nn3cUQv8MRCe9HzxZt45Rt3kIzCigPzxfWQIjYB4315HtSezA1zoQ=
 install:
 - mkdir -p "$TRAVIS_BUILD_DIR/gosrc"
-- go get -v github.com/spf13/hugo
+- go get -v github.com/spf13/hugo && $GOPATH/bin/hugo version
 script: make
 after_success:
 - test $TRAVIS_PULL_REQUEST == "false" && test $TRAVIS_BRANCH == "master" && make push
