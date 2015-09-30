@@ -76,24 +76,12 @@ disqusShortname = "chipsenkbeil"
 
 [Params]
 
-    #
-    # Provide your name, description, and email that you want to include on
-    # the main image of the main page.
-    #
-    name = "Your name"
-    description = "Your description"
-    email = "your@email.com"
+    infinite_scroll = true
 
     [Params.Highlight]
 
         style = "railscasts"
 
-    #
-    # Contains the main grid cell of your site (such as a picture of yourself)
-    # along with your name, description, and email. Any empty field will
-    # not be included. Not providing an image will use a color. Marking as
-    # disabled results in this cell not appearing in the site.
-    #
     [Params.Header]
 
         name = "Chip Senkbeil"
@@ -101,7 +89,6 @@ disqusShortname = "chipsenkbeil"
         email = "chip.senkbeil@gmail.com"
         image = "/img/profile.jpg"
         image_position = "top"
-        #color = "#FFF"
 
     [Params.Footer]
 
@@ -127,57 +114,29 @@ disqusShortname = "chipsenkbeil"
             icon_class = "github"
             icon_link = "https://www.github.com/chipsenkbeil"
 
-    #
-    # Contains the Cells representing the sections of your website. Each cell
-    # contains the name of the cell, a brief description, and a link to the
-    # associated section. 
-    #
-    # Not providing an image will use the color specified by 'color' as the
-    # background color (default to #FFF).
-    #
-    # You can embed an icon using 'icon' to specify the classes to use
-    # for the icon (such as 'fa fa-flag' when using font awesome).
-    #
-    # By default, each cell has a grid size of 1/3 (4 out of 12) for large
-    # screens, 1/2 (6 out of 12) for medium screens, and 1 (12 out of 12) for
-    # small screens. To change the cell's size per screen, use the properties
-    # 'cell_large', 'cell_medium', and 'cell_small' respectively with a number
-    # ranging from 1 to 12. Make sure that Cells have nubmers equalling 12
-    # per row.
-    #
     [Params.Cells]
 
         [[Params.Cells.List]]
 
             name = "Blog"
-            description = "My personal blog"
             link = "/post/"
             image = "/img/blog.jpg"
-            #image_position = "top"
-            #color = "blue"
-            #grayscale = true
-            #no_highlight = true
-            #always_show_text = true
-            #disable = true
 
         [[Params.Cells.List]]
 
             name = "Resumé"
-            description = "My resumé"
             link = "/resume/"
             image = "/img/resume.jpg"
 
         [[Params.Cells.List]]
 
             name = "Software"
-            description = "My personal and work software projects"
             link = "/software/"
             image = "/img/software.jpg"
 
         [[Params.Cells.List]]
 
             name = "Hardware"
-            description = "My personal and work hardware projects"
             link = "/hardware/"
             image = "/img/hardware.jpg"
             disable = true
@@ -185,7 +144,6 @@ disqusShortname = "chipsenkbeil"
         [[Params.Cells.List]]
 
             name = "Talks"
-            description = "My talks given in academia or work"
             link = "/talk/"
             image = "/img/talk.jpg"
             image_position = "center"
@@ -193,7 +151,6 @@ disqusShortname = "chipsenkbeil"
         [[Params.Cells.List]]
 
             name = "Pepper"
-            description = "Pictures and videos of my dog, Pepper"
             link = "/pepper/"
             image = "/img/pepper.jpg"
             image_position = "top"
@@ -201,7 +158,6 @@ disqusShortname = "chipsenkbeil"
         [[Params.Cells.List]]
 
             name = "Snippets"
-            description = "Various snippets of code used for day-to-day tasks"
             link = "/snippet/"
             image = "/img/snippet.jpg"
             disable = true
@@ -209,7 +165,6 @@ disqusShortname = "chipsenkbeil"
         [[Params.Cells.List]]
 
             name = "Notes"
-            description = "Notes taken from day-to-day experiences"
             link = "/note/"
             image = "/img/note.jpg"
 
