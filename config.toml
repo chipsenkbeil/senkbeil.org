@@ -16,13 +16,13 @@ disqusShortname = "chipsenkbeil"
 [[Menu.Main]]
     name = "Pepper"
     identifier = "pepper"
-    url = "/pepper/"
+    url = "pepper/"
     parent = "about"
 
 [[Menu.Main]]
     name = "Resume"
     identifier = "resume"
-    url = "/resume/"
+    url = "resume/"
     parent = "about"
 
 # Blog section of menu
@@ -34,19 +34,19 @@ disqusShortname = "chipsenkbeil"
 [[Menu.Main]]
     name = "Posts"
     identifier = "posts"
-    url = "/post/"
+    url = "post/"
     parent = "blog"
 
 [[Menu.Main]]
     name = "Talks"
     identifier = "talks"
-    url = "/talk/"
+    url = "talk/"
     parent = "blog"
 
 [[Menu.Main]]
     name = "Notes"
     identifier = "notes"
-    url = "/note/"
+    url = "note/"
     parent = "blog"
 
 [[Menu.Main]]
@@ -64,7 +64,7 @@ disqusShortname = "chipsenkbeil"
 [[Menu.Main]]
     name = "Software"
     identifier = "software"
-    url = "/software/"
+    url = "software/"
     parent = "projects"
 
 [[Menu.Main]]
@@ -87,7 +87,7 @@ disqusShortname = "chipsenkbeil"
         name = "Chip Senkbeil"
         description = "Computer Engineer/Scientist/Maniac"
         email = "chip.senkbeil@gmail.com"
-        image = "/img/profile.jpg"
+        image = "img/profile.jpg"
         image_position = "top"
 
     [Params.Footer]
@@ -119,52 +119,52 @@ disqusShortname = "chipsenkbeil"
         [[Params.Cells.List]]
 
             name = "Blog"
-            link = "/post/"
-            image = "/img/blog.jpg"
+            link = "post/"
+            image = "img/blog.jpg"
 
         [[Params.Cells.List]]
 
             name = "Resumé"
-            link = "/resume/"
-            image = "/img/resume.jpg"
+            link = "resume/"
+            image = "img/resume.jpg"
 
         [[Params.Cells.List]]
 
             name = "Software"
-            link = "/software/"
-            image = "/img/software.jpg"
+            link = "software/"
+            image = "img/software.jpg"
 
         [[Params.Cells.List]]
 
             name = "Hardware"
-            link = "/hardware/"
-            image = "/img/hardware.jpg"
+            link = "hardware/"
+            image = "img/hardware.jpg"
             disable = true
 
         [[Params.Cells.List]]
 
             name = "Talks"
-            link = "/talk/"
-            image = "/img/talk.jpg"
+            link = "talk/"
+            image = "img/talk.jpg"
             image_position = "center"
 
         [[Params.Cells.List]]
 
             name = "Pepper"
-            link = "/pepper/"
-            image = "/img/pepper.jpg"
+            link = "pepper/"
+            image = "img/pepper.jpg"
             image_position = "top"
 
         [[Params.Cells.List]]
 
             name = "Snippets"
-            link = "/snippet/"
-            image = "/img/snippet.jpg"
+            link = "snippet/"
+            image = "img/snippet.jpg"
             disable = true
 
         [[Params.Cells.List]]
 
             name = "Notes"
-            link = "/note/"
-            image = "/img/note.jpg"
+            link = "note/"
+            image = "img/note.jpg"
 
