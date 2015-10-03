@@ -49,11 +49,12 @@ disqusShortname = "chipsenkbeil"
     url = "note/"
     parent = "blog"
 
-[[Menu.Main]]
-    name = "Snippets"
-    identifier = "snippets"
-    url = "#!"
-    parent = "blog"
+# Not used
+#[[Menu.Main]]
+#    name = "Snippets"
+#    identifier = "snippets"
+#    url = "#!"
+#    parent = "blog"
 
 # Projects section of menu
 [[Menu.Main]]
@@ -67,11 +68,12 @@ disqusShortname = "chipsenkbeil"
     url = "software/"
     parent = "projects"
 
-[[Menu.Main]]
-    name = "Hardware"
-    identifier = "hardware"
-    url = "#!"
-    parent = "projects"
+# Nothing here yet
+#[[Menu.Main]]
+#    name = "Hardware"
+#    identifier = "hardware"
+#    url = "#!"
+#    parent = "projects"
 
 
 [Params]
@@ -134,12 +136,13 @@ disqusShortname = "chipsenkbeil"
             link = "software/"
             image = "img/software.jpg"
 
-        [[Params.Cells.List]]
-
-            name = "Hardware"
-            link = "hardware/"
-            image = "img/hardware.jpg"
-            disable = true
+        # Nothing here yet
+        #[[Params.Cells.List]]
+        #
+        #    name = "Hardware"
+        #    link = "hardware/"
+        #    image = "img/hardware.jpg"
+        #    disable = true
 
         [[Params.Cells.List]]
 
@@ -155,12 +158,13 @@ disqusShortname = "chipsenkbeil"
             image = "img/pepper.jpg"
             image_position = "top"
 
-        [[Params.Cells.List]]
-
-            name = "Snippets"
-            link = "snippet/"
-            image = "img/snippet.jpg"
-            disable = true
+        # Not used
+        #[[Params.Cells.List]]
+        #
+        #    name = "Snippets"
+        #    link = "snippet/"
+        #    image = "img/snippet.jpg"
+        #    disable = true
 
         [[Params.Cells.List]]
 
