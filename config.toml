@@ -136,14 +136,6 @@ disqusShortname = "chipsenkbeil"
             link = "software/"
             image = "img/software.jpg"
 
-        # Nothing here yet
-        #[[Params.Cells.List]]
-        #
-        #    name = "Hardware"
-        #    link = "hardware/"
-        #    image = "img/hardware.jpg"
-        #    disable = true
-
         [[Params.Cells.List]]
 
             name = "Talks"
@@ -157,14 +149,6 @@ disqusShortname = "chipsenkbeil"
             link = "pepper/"
             image = "img/pepper.jpg"
             image_position = "top"
-
-        # Not used
-        #[[Params.Cells.List]]
-        #
-        #    name = "Snippets"
-        #    link = "snippet/"
-        #    image = "img/snippet.jpg"
-        #    disable = true
 
         [[Params.Cells.List]]
 

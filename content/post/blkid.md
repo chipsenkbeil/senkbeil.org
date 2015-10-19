@@ -14,7 +14,7 @@ didn't care for the default output and found myself using this format:
 blkid -o list -c /dev/null
 ```
 
-![Example of usage](/img/note/blkid.jpg)
+![Example of usage](/img/post/blkid.jpg)
 
 What this does is tell the program to output the information in a user-friendly
 list of devices through '-o list' and not report previous devices using '-c
