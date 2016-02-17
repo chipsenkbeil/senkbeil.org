@@ -43,3 +43,4 @@ Sticking that in the file list_devices.sh, giving it proper permissions for
 execution using chmod +x list_devices.sh, and sticking it in my /usr/bin
 directory did wonders for me. Hopefully it'll help someone else out there as
 well!
+
