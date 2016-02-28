@@ -1,5 +1,5 @@
 # Site settings
-baseurl = "http://chipsenkbeil.com/"
+baseurl = "https://chipsenkbeil.com/"
 languageCode = "en-us"
 title = "Senkbeil"
 theme = "grid-side"
