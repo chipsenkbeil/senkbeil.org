@@ -8,7 +8,7 @@ categories = [ "config" ]
 
 ### Generating Let's Encrypt certs ###
 
-TODO: Followed online guide.
+https://pve.proxmox.com/wiki/HTTPS_Certificate_Configuration_(Version_4.x_and_newer)#Let.27s_Encrypt_using_acme.sh
 
 ### Supporting port 80 & 443 ###
 
