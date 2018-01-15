@@ -96,7 +96,21 @@ fdisk /dev/sda
 
 Deleted all partitions via `d` and then wrote out the update via `w`.
 
-From there, I used `fdisk` on the same disk again with `n` and primary partition 1
+From there, I used `fdisk` on the same disk again with `n` and primary partition 1,
+selecting the _Linux LVM_ partition type. While most docs said it would be _8e_, mine
+ended up being _31_. I finalized the change via `w`.
+
+After that, I created a physical volume via:
+
+```
+pvcreate /dev/sda1
+```
+
+And then proceeded to extend my extending volume group of pve via:
+
+```
+vgextend "pve" /dev/sda1
+```
 
 Once I had added the new drive to my pve volume group, I could allocate the
 rest of the available space to a thin LVM partition called data:
