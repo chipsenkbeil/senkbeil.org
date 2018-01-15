@@ -90,4 +90,18 @@ resize2fs /dev/mapper/pve-root
 
 After that had completed, I wanted to add my HDD as a thin LVM.
 
+```
+fdisk /dev/sda
+```
+
+Deleted all partitions via `d` and then wrote out the update via `w`.
+
+From there, I used `fdisk` on the same disk again with `n` and primary partition 1
+
+Once I had added the new drive to my pve volume group, I could allocate the
+rest of the available space to a thin LVM partition called data:
+
+```
+lvcreate -l 100%FREE -T -n data pve
+```
 
