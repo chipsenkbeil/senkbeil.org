@@ -6,6 +6,12 @@ tags = [ "proxmox" ]
 categories = [ "config" ]
 +++
 
+### Removing subscription notice ###
+
+```
+sed -i.bak 's/NotFound/Active/g' /usr/share/perl5/PVE/API2/Subscription.pm && systemctl restart pveproxy.service
+```
+
 ### Generating Let's Encrypt certs ###
 
 https://pve.proxmox.com/wiki/HTTPS_Certificate_Configuration_(Version_4.x_and_newer)#Let.27s_Encrypt_using_acme.sh
@@ -23,43 +29,65 @@ the files `/etc/nginx/conf.d/default` and `/etc/nginx/site-enabled/default`.
 upstream proxmox {
     server "senkbeil.org";
 }
-
+ 
 server {
     listen 80 default_server;
     rewrite ^(.*) https://$host$1 permanent;
 }
-
+ 
 server {
     listen 443;
     server_name _;
     ssl on;
-
-    # For use with local cert
-    # ssl_certificate /etc/pve/local/pve-ssl.pem;
-    # ssl_certificate_key /etc/pve/local/pve-ssl.key;
-
-    # For use with acme.sh (Let's Encrypt)
+    #ssl_certificate /etc/pve/local/pve-ssl.pem;
     ssl_certificate /etc/pve/local/pveproxy-ssl.pem;
+    #ssl_certificate_key /etc/pve/local/pve-ssl.key;
     ssl_certificate_key /etc/pve/local/pveproxy-ssl.key;
-
     proxy_redirect off;
-
     location / {
-        proxy_http_version 1.1;
-        proxy_set_header Upgrade $http_upgrade;
-        proxy_set_Header Connection "upgrade";
-        proxy_pass https://localhost:8006;
-        proxy_buffering off;
-        client_max_body_size 0;
-        proxy_connect_timeout 3600s;
-        proxy_read_timeout 3600s;
-        proxy_send_timeout 3600s;
-        send_timeout 3600s;
+		proxy_http_version 1.1;
+		proxy_set_header Upgrade $http_upgrade;
+		proxy_set_header Connection "upgrade"; 
+		proxy_pass https://localhost:8006;
+		proxy_buffering off;
+		client_max_body_size 0;
+		proxy_connect_timeout  3600s;
+		proxy_read_timeout  3600s;
+		proxy_send_timeout  3600s;
+		send_timeout  3600s;
     }
 }
 ```
 
 ### Set local root to full SSD and lvm-thin to extra HDD ###
 
-TODO: Figure out.
+My situation was that I had my SSD split into a root and data partition
+and had nothing on my HDD. To remedy this, I began by removing the
+unused data partition via:
+
+```
+lvremove /dev/pve/data
+```
+
+From there, I acquired a list of drives and available space:
+
+```
+pvs
+```
+
+I saw how much space was available on my primary SSD that I wanted
+to merge back into the root partition. In my case, 75.79g of space.
+
+```
+lvresize -L +75.79g /dev/pve/root
+```
+
+Finally, I resized the mapped partition:
+
+```
+resize2fs /dev/mapper/pve-root
+```
+
+After that had completed, I wanted to add my HDD as a thin LVM.
+
 
