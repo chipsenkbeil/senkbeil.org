@@ -11,7 +11,7 @@ computer so that I know what to type for the pmount program, which is really
 handy to have! The program [i]blkid[/i] is capable of doing this; however, I
 didn't care for the default output and found myself using this format:
 
-```bash
+``` bash
 blkid -o list -c /dev/null
 ```
 
@@ -29,7 +29,7 @@ it needs root permissions.
 So, to make this as painless as possible, I wrote a very small wrapper script
 that does this task for me:
 
-```bash
+``` bash
 #! /bin/sh
 
 if [[ $UID != 0]]; then

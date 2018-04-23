@@ -1,6 +1,15 @@
 baseurl = "https://chipsenkbeil.com/"
+title = "Chip Senkbeil"
+
 theme = "coder"
 languageCode = "en-us"
+
+paginate = 12
+canonifyurls = true
+
+pygmentsstyle = "b2"
+pygmentscodefences = true
+pygmentscodefencesguesssyntax = true
 
 [params]
     author = "Chip Senkbeil"
@@ -22,11 +31,15 @@ languageCode = "en-us"
     url = "https://linkedin.com/in/robertsenkbeil/"
 
 [[menu.main]]
-    name = "Blog"
+    name = "blog"
     weight = 1
     url = "/posts/"
 [[menu.main]]
-    name = "About"
+    name = "notes"
     weight = 2
+    url = "/notes/"
+[[menu.main]]
+    name = "about"
+    weight = 3
     url = "/about/"
 

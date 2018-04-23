@@ -1,5 +1,5 @@
 +++
-title = "Prommox Changes"
+title = "Proxmox Changes"
 slug = "promox-changes"
 description = "Writeup about changes and additions made to proxmox installation"
 date = "2018-01-14"
