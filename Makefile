@@ -55,10 +55,10 @@ generate:
 
 update:
 	git pull origin master
-	(cd themes/grid-side/ && git checkout master && git pull origin master)
+	(cd themes/coder/ && git checkout master && git pull origin master)
 
 build:
-	$(GOPATH)/bin/hugo --theme="grid-side"
+	$(GOPATH)/bin/hugo --theme="coder"
 
 push:
 	cd $(OUTPUT_DIR) && \

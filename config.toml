@@ -1,158 +1,32 @@
-# Site settings
 baseurl = "https://chipsenkbeil.com/"
+theme = "coder"
 languageCode = "en-us"
-title = "Senkbeil"
-theme = "grid-side"
-copyright = "Copyright &#169; by Chip Senkbeil"
-paginate = 12
-disqusShortname = "chipsenkbeil"
 
-# About section of menu
-[[Menu.Main]]
-    name = "About"
-    identifier = "about"
-    url = "#!"
+[params]
+    author = "Chip Senkbeil"
+    info = "Solutions Engineer @ Facebook"
+    description = "Chip Senkbeil's Personal Website"
+    keywords = "blog,developer,personal"
 
-[[Menu.Main]]
-    name = "Pepper"
-    identifier = "pepper"
-    url = "pepper/"
-    parent = "about"
+[[params.social]]
+    name = "github"
+    weight = 1
+    url = "https://github.com/chipsenkbeil/"
+[[params.social]]
+    name = "twitter"
+    weight = 2
+    url = "https://twitter.com/chipsenkbeil/"
+[[params.social]]
+    name = "linkedin"
+    weight = 3
+    url = "https://linkedin.com/in/robertsenkbeil/"
 
-[[Menu.Main]]
-    name = "Resume"
-    identifier = "resume"
-    url = "resume/"
-    parent = "about"
-
-# Blog section of menu
-[[Menu.Main]]
+[[menu.main]]
     name = "Blog"
-    identifier = "blog"
-    url = "#!"
-
-[[Menu.Main]]
-    name = "Posts"
-    identifier = "posts"
-    url = "post/"
-    parent = "blog"
-
-[[Menu.Main]]
-    name = "Talks"
-    identifier = "talks"
-    url = "talk/"
-    parent = "blog"
-
-[[Menu.Main]]
-    name = "Notes"
-    identifier = "notes"
-    url = "note/"
-    parent = "blog"
-
-# Not used
-#[[Menu.Main]]
-#    name = "Snippets"
-#    identifier = "snippets"
-#    url = "#!"
-#    parent = "blog"
-
-# Projects section of menu
-[[Menu.Main]]
-    name = "Projects"
-    identifier = "projects"
-    url = "#!"
-
-[[Menu.Main]]
-    name = "Software"
-    identifier = "software"
-    url = "software/"
-    parent = "projects"
-
-# Nothing here yet
-#[[Menu.Main]]
-#    name = "Hardware"
-#    identifier = "hardware"
-#    url = "#!"
-#    parent = "projects"
-
-
-[Params]
-
-    infinite_scroll = true
-
-    [Params.Highlight]
-
-        style = "railscasts"
-
-    [Params.Header]
-
-        name = "Chip Senkbeil"
-        description = "Computer Engineer/Scientist/Maniac"
-        email = "chip.senkbeil@gmail.com"
-        image = "img/profile.jpg"
-        image_position = "top"
-
-    [Params.Footer]
-
-        name = "Chip Senkbeil"
-
-        [[Params.Footer.List]]
-
-            icon_class = "twitter"
-            icon_link = "https://twitter.com/ChipSenkbeil"
-
-        [[Params.Footer.List]]
-
-            icon_class = "linkedin"
-            icon_link = "https://www.linkedin.com/in/robertsenkbeil"
-
-        [[Params.Footer.List]]
-
-            icon_class = "google-plus"
-            icon_link = "https://www.google.com/+ChipSenkbeil"
-
-        [[Params.Footer.List]]
-
-            icon_class = "github"
-            icon_link = "https://www.github.com/chipsenkbeil"
-
-    [Params.Cells]
-
-        [[Params.Cells.List]]
-
-            name = "Blog"
-            link = "post/"
-            image = "img/blog.jpg"
-
-        [[Params.Cells.List]]
-
-            name = "Resumé"
-            link = "resume/"
-            image = "img/resume.jpg"
-
-        [[Params.Cells.List]]
-
-            name = "Software"
-            link = "software/"
-            image = "img/software.jpg"
-
-        [[Params.Cells.List]]
-
-            name = "Talks"
-            link = "talk/"
-            image = "img/talk.jpg"
-            image_position = "center"
-
-        [[Params.Cells.List]]
-
-            name = "Pepper"
-            link = "pepper/"
-            image = "img/pepper.jpg"
-            image_position = "top"
-
-        [[Params.Cells.List]]
-
-            name = "Notes"
-            link = "note/"
-            image = "img/note.jpg"
+    weight = 1
+    url = "/posts/"
+[[menu.main]]
+    name = "About"
+    weight = 2
+    url = "/about/"
 
