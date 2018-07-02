@@ -11,6 +11,8 @@ pygmentsstyle = "b2"
 pygmentscodefences = true
 pygmentscodefencesguesssyntax = true
 
+disqusShortname = "chipsenkbeil"
+
 [params]
     author = "Chip Senkbeil"
     info = "Solutions Engineer @ Facebook"
