@@ -15,6 +15,8 @@ Presently employed as a _Solutions Engineer_ at Facebook.
 - Scala Debugger; Scala Tooling; Scala [LINK](https://scala-debugger.org/)
 - Grid Side; Hugo Theme; JavaScript/CSS/HTML
     [LINK](https://github.com/chipsenkbeil/grid-side)
+- Apache Toree; Scala/R/Python Spark Kernel; Scala
+    [LINK](https://toree.incubator.apache.org)
 
 ## Public Talks
 
