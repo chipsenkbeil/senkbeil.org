@@ -11,7 +11,8 @@ pygmentsstyle = "b2"
 pygmentscodefences = true
 pygmentscodefencesguesssyntax = true
 
-disqusShortname = "chipsenkbeil"
+# Disable disqus as I'll take comments via Twitter or other mediums
+# disqusShortname = "chipsenkbeil"
 
 [params]
     author = "Chip Senkbeil"
