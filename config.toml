@@ -19,6 +19,7 @@ pygmentscodefencesguesssyntax = true
     info = "Solutions Engineer @ Facebook"
     description = "Chip Senkbeil's Personal Website"
     keywords = "blog,developer,personal"
+    hideCredits = true
 
 [[params.social]]
     name = "github"
