@@ -11,6 +11,8 @@ pygmentsstyle = "b2"
 pygmentscodefences = true
 pygmentscodefencesguesssyntax = true
 
+googleAnalytics = "UA-71733200-2"
+
 # Disable disqus as I'll take comments via Twitter or other mediums
 # disqusShortname = "chipsenkbeil"
 
