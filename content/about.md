@@ -6,6 +6,11 @@ description = "About the engineer Chip Senkbeil"
 
 Presently employed as a _Solutions Engineer_ at Facebook.
 
+## Employment History
+
+- Solutions Engineer; Facebook; 2017 - present
+- Software Engineer; IBM; 2014 - 2017
+
 ## Public Projects
 
 - remote.nvim; Remote File Editor; vimscript/python
