@@ -22,7 +22,7 @@ clean:
 
 update:
 	@git pull origin master
-	@(cd themes/coder/ && git checkout master && git pull origin master)
+	@git submodule update --remote --merge
 
 build:
 	@$(HUGO) --theme="$(THEME)"
