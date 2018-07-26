@@ -7,9 +7,10 @@ languageCode = "en-us"
 paginate = 12
 canonifyurls = true
 
-pygmentsstyle = "b2"
+# pygmentsstyle = "b2"
 pygmentscodefences = true
 pygmentscodefencesguesssyntax = true
+pygmentsUseClasses=true
 
 googleAnalytics = "UA-71733200-2"
 
@@ -22,7 +23,8 @@ disqusShortname = "chipsenkbeil"
     description = "Chip Senkbeil's Personal Website"
     keywords = "blog,developer,personal"
     hideCredits = true
-    avatarurl = "img/profile.jpg"
+    avatarurl = "/img/profile.jpg"
+    custom_css = ["/styles/gruvbox.css"]
 
 [[params.social]]
     name = "github"
