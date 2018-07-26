@@ -22,6 +22,7 @@ googleAnalytics = "UA-71733200-2"
     description = "Chip Senkbeil's Personal Website"
     keywords = "blog,developer,personal"
     hideCredits = true
+    avatarurl = "img/profile.jpg"
 
 [[params.social]]
     name = "github"
