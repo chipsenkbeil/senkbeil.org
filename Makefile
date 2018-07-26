@@ -30,7 +30,7 @@ build:
 serve:
 	@$(HUGO) serve --theme="$(THEME)"
 
-push: build
+push: clean build
 	cd $(OUTPUT_DIR) && \
 	git init && \
 	git config user.email $(USER_EMAIL) && \
