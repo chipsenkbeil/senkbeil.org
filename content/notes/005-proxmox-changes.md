@@ -1,6 +1,6 @@
 +++
 title = "Proxmox Changes"
-slug = "promox-changes"
+slug = "proxmox-changes"
 description = "Writeup about changes and additions made to proxmox installation"
 date = "2018-01-14"
 categories = [ "config" ]
