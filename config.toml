@@ -25,6 +25,8 @@ disqusShortname = "chipsenkbeil"
     hideCredits = true
     avatarurl = "/img/profile.jpg"
     custom_css = ["/styles/gruvbox.css"]
+    favicon_32 = "/img/favicon-32x32.png"
+    favicon_16 = "/img/favicon-16x16.png"
 
 [[params.social]]
     name = "github"
@@ -51,4 +53,3 @@ disqusShortname = "chipsenkbeil"
     name = "about"
     weight = 3
     url = "/about/"
-
