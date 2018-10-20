@@ -14,26 +14,42 @@ Interestingly enough, the challenges underlined by those questions overlap with
 those that I've faced as a solutions engineer, and it's those challenges and
 how I've approached tackling them that I'm going to try to summarize here.
 
-## Expectations
+## New Role
 
 When I first became a solutions engineer back in July of 2017, I wasn't sure
-what would be expected of me. At IBM, success stemmed from a mixture of my
-contributions to engineering projects and my technical leadership. Pushing
-forward better coding practices, designing robust architectures, and writing
-fault-tolerant and scalable code was my bread and butter.
+what I would actually be doing. At IBM, my work revolved around code 100% of
+the time. I'd written Ruby on Rails applications, contributed to Apache Spark,
+architected and implemented an IPython/Jupyter kernel ([Apache
+Toree][apache-toree]), and worked on a [conversational computing
+platform][conversational-computing] leveraging Watson technologies.
 
 How did that transfer to my new position? The job description painted the role
 as 50% coding and 50% non-technical work, but who can really say what that
-means until you try out the job for yourself. From what I've experienced thus
-far, a solutions engineer has the same coding expectations that I was familiar
-with from IBM
-Lo and behold, my new position as a solutions engineer involved all of those
-expectations and much more. From
+means until you try out the job for yourself. As I've learned, the role can
+vary drastically in responsibilities and engagements based on your team, which
+makes sense as the same would apply to a software engineering position. I
+landed in a team focused on engaging with clients under the umbrella of SMB HV.
+
+- SMB stands for _small and medium (a.k.a. midsize) business_, and
+  [Gartner's summary][smb] provides a good idea of the staff and annual
+  revenue that encompasses.
+- HV stands for _high value_ and is primarily used as a classification used
+  within the company to separate low-spending advertisers (think $100 per
+  month) from higher-spending advertisers.
+
+What have I found since joining the SMB HV team? You have the freedom to define
+your own schedule, and that includes what meetings you accept and how much of
+your calendar you let fill up. I split my time between
+
+"But the coding!" you shout. "What about the coding?" Coding time can rapidly
+vary from week to week, at least for me.
 
 discuss not just coding role
 discuss involves lot of communication with a variety of roles and experiences
 discuss goals shifted from building/designing; that is still important, but is
 part of a means to an end (and good work is expected)
+
+## Expectations
 
 ## Challenges
 
@@ -114,3 +130,5 @@ discuss need to never become fully complacent
 
 [apache-toree]: https://toree.incubator.apache.org/
 [conversational-computing]: https://find-stews-video-on-youtube.com/
+[smb]: https://www.gartner.com/it-glossary/smbs-small-and-midsize-businesses/
+[conversational-computing]: https://www.youtube.com/watch?v=-fo_bvxxXww
