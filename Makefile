@@ -24,6 +24,12 @@ update:
 	@git pull origin master
 	@git submodule update --remote --merge
 
+update-theme:
+	@(cd themes/$(THEME) && git pull upstream master && git push origin HEAD:master)
+	@git add themes/$(THEME)
+	@git commit -m "Updated themes/$(THEME)"
+	@git push origin master
+
 build:
 	@$(HUGO) --theme="$(THEME)"
 
@@ -43,4 +49,3 @@ push: clean build
 	git add -A && \
 	git commit -m "Rebuilt pages at $(REV)" && \
 	git push -q upstream HEAD:$(BRANCH)
-
