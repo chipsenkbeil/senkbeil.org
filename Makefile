@@ -15,28 +15,32 @@ CNAME:="$(DOMAIN)\nwww.$(DOMAIN)"
 REV=$(shell git rev-parse --short HEAD)
 
 
-all: clean build
+all: clean build ## (Default) Cleans and builds website
 
-clean:
+help: ## Display help information
+	@printf 'usage: make [target] ...\n\ntargets:\n'
+	@egrep '^(.+)\:\ .*##\ (.+)' ${MAKEFILE_LIST} | sed 's/:.*##/#/' | column -t -c 2 -s '#'
+
+clean: ## Removes output directory
 	@rm -rf $(OUTPUT_DIR)
 
-update:
+update: ## Updates theme and pulls latest changes from master repo
 	@git pull origin master
 	@git submodule update --remote --merge
 
-update-theme:
+update-theme: ## Updates theme from upstream, rather than origin
 	@(cd themes/$(THEME) && git pull upstream master && git push origin HEAD:master)
 	@git add themes/$(THEME)
 	@git commit -m "Updated themes/$(THEME)"
 	@git push origin master
 
-build:
+build: ## Builds website
 	@$(HUGO) --theme="$(THEME)"
 
-serve:
+serve: ## Runs server to test out website
 	@$(HUGO) serve --theme="$(THEME)"
 
-push: clean build
+push: clean build ## Cleans, builds, and publishes website
 	cd $(OUTPUT_DIR) && \
 	git init && \
 	git config user.email $(USER_EMAIL) && \
