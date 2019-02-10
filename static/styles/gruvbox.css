@@ -2,13 +2,13 @@
 /*
  * Custom stylings specifically for hugo-coder theme.
  */
-code { background-color: #282828 }
-.highlight code { background-color: #282828 }
+code { background-color: #282828; color: #ebdbb2 }
+.highlight code { background-color: #282828; color: #ebdbb2 }
 
 /*
  * From https://github.com/daveyarwood/gruvbox-pygments
  *
- * TODO: Eventually switch to SCSS and 
+ * TODO: Eventually switch to SCSS and
  * https://github.com/morhetz/gruvbox-contrib/tree/master/scss
  */
 .highlight .hll { background-color: #ffffcc }
