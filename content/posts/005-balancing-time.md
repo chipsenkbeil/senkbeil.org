@@ -1,41 +1,51 @@
 +++
 title = "Finding My Balance"
 slug = "finding-my-balance"
-date = "2018-09-04"
+date = "2019-02-14"
 categories = [ "life" ]
 tags = [ "time management", "pomodoro", "self improvement", "strengths & weaknesses" ]
 +++
 
 Writing blog posts is hard, at least for me. What is a good topic to discuss?
 When can I find the time to write the content? How can I stay focused long
-enough to finish a post?
+enough to finish a post? How do I understand if the post was a hit?
 
-Interestingly enough, the challenges underlined by those questions overlap with
-those that I've faced as a solutions engineer, and it's those challenges and
-how I've approached tackling them that I'm going to try to summarize here.
+Interestingly enough, the challenges posed by those questions share
+similarities with those that I've faced as a solutions engineer, and it's these
+challenges and how I've approached tackling them that I'm going to discuss
+here.
 
-## New Role
+## New Role, New Responsibilities
 
 When I first became a solutions engineer back in July of 2017, I wasn't sure
 what I would actually be doing. At IBM, my work revolved around code 100% of
-the time. I'd written Ruby on Rails applications, contributed to Apache Spark,
-architected and implemented an IPython/Jupyter kernel ([Apache
-Toree][apache-toree]), and worked on a [conversational computing
-platform][conversational-computing] leveraging Watson technologies.
+the time. I'd written Ruby on Rails applications to provide cloud cluster
+management and remote desktop integration, contributed to Apache Spark,
+architected and implemented an [IPython (now Jupyter) kernel][apache-toree]),
+and worked on a [conversational computing platform][conversational-computing]
+leveraging Watson technologies.
 
 How did that transfer to my new position? The job description painted the role
 as 50% coding and 50% non-technical work, but who can really say what that
-means until you try out the job for yourself. As I've learned, the role can
-vary drastically in responsibilities and engagements based on your team, which
-makes sense as the same would apply to a software engineering position. I
-landed in a team focused on engaging with clients under the umbrella of SMB HV.
+means until you try out the job for yourself.  I landed in a team with a focus
+on both scalability and client engagement, which you would think are opposites
+given the personal nature of 
 
-- SMB stands for _small and medium (a.k.a. midsize) business_, and
-  [Gartner's summary][smb] provides a good idea of the staff and annual
-  revenue that encompasses.
-- HV stands for _high value_ and is primarily used as a classification used
-  within the company to separate low-spending advertisers (think $100 per
-  month) from higher-spending advertisers.
+As I've learned, the role can
+vary drastically in responsibilities and engagements based on your team, which
+makes sense as the same would apply to a software engineering position.
+
+What did all of this mean for me? A couple of things:
+
+1. I was client facing, meaning I would talk to advertisers directly where
+   warranted
+2. I had to design and build software at scale from both a technical and
+   industry perspective (not tied to one industry where possible)
+3. TODO
+
+## Struggles
+
+## What
 
 What have I found since joining the SMB HV team? You have the freedom to define
 your own schedule, and that includes what meetings you accept and how much of
@@ -59,25 +69,22 @@ challenges impeding me from performing my best.
 ### Context Switching
 
 When doing traditional software engineering, I was used to large blocks of time
-being dedicated to single tasks. Given a new task, I could afford to dedicate
+being dedicated to single tasks. Given a new task, I could afford to spend
 multiple hours at a time towards thinking through and implementing a solution
-in one go. I could dedicate my complete focus to the task at hand - getting
+in one go. I could completely focus on the task at hand - getting
 _into the zone_ - and not worry about frequent interruptions vying for my time.
 
-After I switched over to a solutions engineer, I quickly realized that I no
-longer had that luxury. What's that, you need me to implement a new React
-application to enable the sales team to better understand the needs of their
-clients? Sure, I can do that, just let me - oh, what's that? I need to write a
-training document to teach retail-focused sales team members about some of our
-new product offerings? Okay, but what do you want me to do about - oh, the CMO
-of your biggest client is having a meeting right now and it's critical that a
-solutions engineer joins the call? Uh, well, I....
+After switching over to become a solutions engineer, I quickly realized that I no
+longer had that luxury. Multiple projects with different technical stacks split
+up my technical focus while other responsibilities - namely industry research,
+cross-functional team collaboration, training & education preparation, client
+and sales meetings, analyzing and formulating queries for data, etc. - ate up
+the rest of my time.
 
-The point illustrated above is that - as a solutions engineer - I've been
-expected to handle a variety of different tasks, all of which are vying for my
-attention and require different skills and mindsets to tackle. This involved
-quite a lot of context switching, which prevented me from getting _into the
-zone_ compared to my previous job.
+I've been expected to handle a variety of different tasks, all of which are
+vying for my attention and require different skills and mindsets to tackle.
+This involved quite a lot of context switching, which prevented me from getting
+_into the zone_ compared to my previous job.
 
 ### Parallel Work
 
