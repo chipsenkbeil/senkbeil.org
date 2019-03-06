@@ -71,7 +71,7 @@ have no doubt that I'll continue to stay .
 
 ## Challenges
 
-### There is so much to do
+### Swarmed by different responsibilities
 
 When doing traditional software engineering, I was accustom to large blocks of
 time being dedicated to single tasks. Given a new task, I could afford to spend
@@ -91,17 +91,26 @@ attention and require different skills and mindsets to tackle. This involved
 quite a lot of context switching, which prevented me from getting _into the
 zone_ compared to my previous job.
 
+...
+
+How do I keep track of all the different responsibilities I have?
+
 ### Prioritization is hard
 
 Context switching can be deadly as an engineer, slowing down or even halting
 progress towards completing projects. If I wasn't careful, my work could
-quickly lead down a road of unproductivity and frustration. How do I ensure
-that I'm spending my time on the right projects? Is there a way to make sure
-that I'm making progress on multiple initiatives at once?
-
-### I still want a life outside of work
+quickly lead down a road of unproductivity and frustration.
 
 ...
+
+How do I ensure that I'm spending my time on the right projects?
+
+###
+
+...
+
+Is there a way to make sure that I'm making progress on multiple initiatives at
+once?
 
 
 ## Solutions
@@ -126,6 +135,11 @@ potentially show picture of planner
 ...
 evaluate by impact and time
 check in with manager to get another perspective
+
+Ask questions like
+Should I be doing this? Or is this meant for someone else?
+Is this something I can do quickly in five minutes or less? Or is it more
+involved?
 
 ### What happens at work, stays at work
 
@@ -153,3 +167,6 @@ nights, grad school
 [flux]: https://facebook.github.io/flux/docs/overview.html
 [python]: https://www.python.org/
 [inbox-zero]: https://www.youtube.com/watch?v=z9UjeTMb3Yk
+[pomodoro-technique]: https://francescocirillo.com/pages/pomodoro-technique
+[bullet-journal]: https://bulletjournal.com/
+[panda-planner]: https://pandaplanner.com/
