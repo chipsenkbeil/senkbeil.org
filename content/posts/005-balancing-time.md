@@ -1,7 +1,7 @@
 +++
 title = "Finding My Balance"
 slug = "finding-my-balance"
-date = "2019-03-05"
+date = "2019-03-13"
 categories = [ "life" ]
 tags = [ "time management", "pomodoro", "self improvement", "strengths & weaknesses" ]
 +++
@@ -29,22 +29,21 @@ Watson technologies.
 
 ### The new role said 50/50 technical & non-technical
 
-How did that transfer to my new position? The job description painted the role
-as 50% coding and 50% non-technical work, but who can really say what that
-means until you try out the job for yourself.  I landed in a team with a focus
-on both scalability and client engagement, which you would think are opposites
-given the personal nature of client engagement and the abstract focus that
-scalability demands.
+The job description painted the role as 50% coding and 50% non-technical work,
+but who can really say what that means until you try out the job for yourself.
+I landed in a team with a focus on both scalability and client engagement,
+which you would think are opposites given the personal nature of client
+engagement and the abstract focus that scalability demands.
 
 In actuality, these two focuses are intertwined. By __understanding__ the
 challenges that clients are facing on the platform and in the industry, we as
 solutions engineers are in the unique position to identify and engage in
-devising solutions at a faster pace and with more detailed attention to client
-needs than any other engineering team. Combining with my team's need to
-__scale__ our solutions across (ideally) thousands of advertisers, the
-solutions we build need to function at a minimum across entire industries with
-the preferred approach being to create solutions that can span across multiple
-industries in scope.
+solutions at a faster pace and with more detailed attention to client needs
+than any other engineering team. Combining with my team's need to __scale__ our
+solutions across (ideally) thousands of advertisers, the solutions we build
+need to function at a minimum across entire industries like ecommerce or retail
+with the preferred approach being to create solutions that can span across
+multiple industries.
 
 ### Is that breakdown honest?
 
@@ -58,6 +57,10 @@ diving deep into understanding an existing technical stack, building out
 full-stack applications for internal tools, or adding enhancements to our
 existing public interfaces.
 
+Each team under solutions engineering is a little different with some teams
+having minimal client interaction while others like mine deal with a large
+volume of different clients on a weekly basis.
+
 ### What technologies have I leveraged?
 
 Focusing on the technical, I've spent my time building frontends leveraging
@@ -65,11 +68,18 @@ Focusing on the technical, I've spent my time building frontends leveraging
 also got my eye on [ReasonML][reasonml]); designing and implementing backend
 systems in [Hack][hack]; creating data pipelines using our internal systems and
 a mixture of [Python][python]; and architecting and building a system
-leveraging machine learning technologies. With room to explore new
-opportunities and having an excellent management team aiding in my growth, I
-have no doubt that I'll continue to stay .
+leveraging __machine learning technologies__.
 
-## Challenges
+As with the breakdown described earlier, your work can vary depending on which
+specific team you are on within solutions engineering. If you are more heavily
+involved with gaming, your focus could be more centered around mobile
+application development and enhancements to our SDKs, while an
+ecommerce-centric approach would require a lot more web-based development.
+
+## Challenges & Solutions
+
+I've tried to do my best to describe a little bit about my new role. The
+experiences and
 
 ### Swarmed by different responsibilities
 
