@@ -34,14 +34,12 @@ Presently employed as a _Solutions Engineer_ at Facebook.
 
 - UAV Collision Avoidance Using Artificial Potential Fields (2014)
     [LINK](http://arc.aiaa.org/doi/abs/10.2514/1.I010022)
-- Running students' software tests against each others' code: 
+- Running students' software tests against each others' code:
   new life for an old "gimmick" (2012)
   [LINK](http://dl.acm.org/citation.cfm?id=2157202)
 
 ## Education
 
-- M.S. in Computer Science from Georgia Tech; 2015 - 2019
+- M.S. in Computer Science from Georgia Tech; 2016 - 2019
 - B.S. in Computer Engineering from Virginia Tech; 2009 - 2013
 - B.S. in Computer Science from Virginia Tech; 2009 - 2013
-
-
