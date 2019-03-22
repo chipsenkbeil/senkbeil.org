@@ -3,7 +3,7 @@
 # Hugo-related fields
 HUGO=$(shell which hugo)
 THEME="coder"
-OUTPUT_DIR:="public/"
+OUTPUT_DIR:=public
 
 # Push-related fields
 USER_EMAIL:="chip.senkbeil@gmail.com"
@@ -21,8 +21,8 @@ help: ## Display help information
 	@printf 'usage: make [target] ...\n\ntargets:\n'
 	@egrep '^(.+)\:\ .*##\ (.+)' ${MAKEFILE_LIST} | sed 's/:.*##/#/' | column -t -c 2 -s '#'
 
-clean: ## Removes output directory
-	@rm -rf $(OUTPUT_DIR)
+clean: ## Removes contents inside output directory
+	@rm -rf $(OUTPUT_DIR)/*
 
 update: ## Updates theme and pulls latest changes from master repo
 	@git pull origin master
@@ -40,14 +40,18 @@ build: ## Builds website
 serve: ## Runs server to test out website
 	@$(HUGO) serve --theme="$(THEME)"
 
-push: clean build ## Cleans, builds, and publishes website
+$(OUTPUT_DIR)/.git:
+	mkdir -p $(OUTPUT_DIR) && \
 	cd $(OUTPUT_DIR) && \
 	git init && \
 	git config user.email $(USER_EMAIL) && \
 	git config user.name $(USER_NAME) && \
 	git remote add upstream "$(REPO)" && \
 	git fetch upstream && \
-	git reset upstream/$(BRANCH) && \
+	git reset upstream/$(BRANCH)
+
+push: clean $(OUTPUT_DIR)/.git build ## Cleans, builds, and publishes website
+	cd $(OUTPUT_DIR) && \
 	echo $(CNAME) > CNAME && \
 	touch . && \
 	git add -A && \
