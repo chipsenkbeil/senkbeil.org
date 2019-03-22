@@ -92,15 +92,6 @@ explore:
 Each of these is something I've faced since becoming a solutions engineer. Now
 I want to dive into each area and how I've approached tackling it.
 
-Solutions
-1. Make lists
-2. Gauge by impact and deadline; but don't put off longer tasks
-3. For longer tasks, break them up into bite-sized pieces; continue tackling
-   each day; never "really" procrastinate
-4. Fight distractions and disinterest using time boxing (Pomodoro)
-5. Plan out your day, use some way to evaluate progress (Pomodoro), and
-   feel good that you accomplished X; don't keep working on Y
-
 ### Lots of responsibilities? Make a list.
 
 Having a lot of tasks as a software engineer at IBM was challenging, but I was
