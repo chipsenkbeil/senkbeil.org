@@ -23,6 +23,7 @@ googleAnalytics = "UA-71733200-2"
     description = "Chip Senkbeil's Personal Website"
     keywords = "blog,developer,personal"
     hideCredits = true
+    footercontent = "Views are my own"
     avatarurl = "/img/profile.jpg"
     custom_css = ["/styles/gruvbox.css"]
     favicon_32 = "/img/favicon-32x32.png"
