@@ -56,4 +56,4 @@ push: clean $(OUTPUT_DIR)/.git build ## Cleans, builds, and publishes website
 	touch . && \
 	git add -A && \
 	git commit -m "Rebuilt pages at $(REV)" && \
-	git push -q upstream HEAD:$(BRANCH)
+	git push --force upstream HEAD:$(BRANCH)
