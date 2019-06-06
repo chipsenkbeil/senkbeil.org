@@ -23,7 +23,7 @@ googleAnalytics = "UA-71733200-2"
     description = "Chip Senkbeil's Personal Website"
     keywords = "blog,developer,personal"
     hideCredits = true
-    footercontent = "Views are my own"
+    footercontent = "Views are my own<br /><a href=\"/keys/chipsenkbeil.personal.asc\">Public Keys</a>"
     avatarurl = "/img/profile.jpg"
     custom_css = ["/styles/gruvbox.css"]
     favicon_32 = "/img/favicon-32x32.png"
@@ -41,6 +41,10 @@ googleAnalytics = "UA-71733200-2"
     name = "linkedin"
     weight = 3
     url = "https://linkedin.com/in/robertsenkbeil/"
+[[params.social]]
+    name = "keybase"
+    weight = 4
+    url = "https://keybase.io/senkwich"
 
 [[menu.main]]
     name = "blog"
