@@ -8,12 +8,15 @@ OUTPUT_DIR:=public
 # Push-related fields
 USER_EMAIL:="chip.senkbeil@gmail.com"
 USER_NAME:="Chip Senkbeil"
-REPO:="git@github.com:chipsenkbeil/chipsenkbeil.github.io.git"
-BRANCH:="master"
-DOMAIN:="chipsenkbeil.com"
-CNAME:="$(DOMAIN)\nwww.$(DOMAIN)"
+REPO:=git@github.com:chipsenkbeil/chipsenkbeil.github.io.git
+BRANCH:=master
+DOMAIN:=chipsenkbeil.com
 REV=$(shell git rev-parse --short HEAD)
 
+define CNAME
+$(DOMAIN)
+www.$(DOMAIN)
+endef
 
 all: clean build ## (Default) Cleans and builds website
 
@@ -50,9 +53,10 @@ $(OUTPUT_DIR)/.git:
 	git fetch upstream && \
 	git reset upstream/$(BRANCH)
 
+export CNAME
 push: clean $(OUTPUT_DIR)/.git build ## Cleans, builds, and publishes website
 	cd $(OUTPUT_DIR) && \
-	echo $(CNAME) > CNAME && \
+	echo "$$CNAME" > CNAME && \
 	touch . && \
 	git add -A && \
 	git commit -m "Rebuilt pages at $(REV)" && \
