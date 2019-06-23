@@ -55,9 +55,9 @@ googleAnalytics = "UA-71733200-2"
     weight = 2
     url = "/notes/"
 [[menu.main]]
-    name = "reading"
+    name = "miscellaneous"
     weight = 3
-    url = "/reading/"
+    url = "/miscellaneous/"
 [[menu.main]]
     name = "about"
     weight = 4
