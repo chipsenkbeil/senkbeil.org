@@ -102,5 +102,4 @@ Enter 2019 and I had become interested in switching from [LastPass](https://last
 
 ## What's next?
 
-In the next post, I'll be explaining how I set up my GPG key and configured it
-for encrypting my passwords.
+In [the next post](/posts/applying-gpg-and-yubikey-part-2-setup-primary-gpg-key), I'll be explaining how I set up my primary GPG key.
