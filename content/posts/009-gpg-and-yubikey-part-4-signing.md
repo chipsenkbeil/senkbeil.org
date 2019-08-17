@@ -224,6 +224,20 @@ listed as none. I had added all five of my auth keys (one per yubikey) to
 the sshcontrol file. I only added the key that had the card number to
 github and it worked fine.
 
+NOTE: On a new machine that is also using `ssh-add -L`, I had to run
+`gpg-connect-agent updatestartuptty /bye` to get around hitting issues like
+below for `git pull upstream master`:
+
+```
+sign_and_send_pubkey: signing failed: agent refused operation
+sign_and_send_pubkey: signing failed: agent refused operation
+git@github.com: Permission denied (publickey).
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights and the repository
+exists.
+```
+
 ### Using auth key for ssh to remote machines
 
 Follow the setup for github to get ssh to detect auth keys.
