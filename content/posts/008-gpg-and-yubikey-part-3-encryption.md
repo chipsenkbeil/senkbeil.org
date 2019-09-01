@@ -173,7 +173,7 @@ repository that we initialized earlier.
 > so you should definitely do your own research here!
 
 Encrypting mail using GPG has never been an incredibly popular option. It's
-difficult to get right and that vast majority of people you email on a regular
+difficult to get right and the vast majority of people you email on a regular
 basis do not even have GPG keys let alone encrypt their mail with them.
 
 I still wanted to give encrypting (and signing discussed later) a try, so
