@@ -2,6 +2,7 @@
 title = "Applying GPG and Yubikey: Part 2 (Setup Primary GPG Key)"
 slug = "applying-gpg-and-yubikey-part-2-setup-primary-gpg-key"
 date = "2019-08-16"
+lastmod = "2019-12-10"
 categories = [ "applying" ]
 tags = [ "gpg", "yubikey" ]
 +++
@@ -152,7 +153,135 @@ uid                   [ultimate] Chip Senkbeil (Personal [Senkbeil]) <chip@senkb
 ssb   rsa4096/0x588B4B090695884C 2019-03-01 [E]
 ```
 
+### (Optional) Step 7: Create additional subkeys
+
+> Subkeys are incredibly handy for separating responsibilities and limiting
+> the impact to your web of trust for your identity if a key is compromised
+> or stolen. This is an optional step to create new subkeys for signing and
+> authentication, which we'll explore further in later posts.
+
+If you look at the output of `gpg -k` after creating your first primary key,
+you should notice two different keys, primary labeled with *pub* and each
+subkey with *sub*. Each key will have its capabilities listed next to its ID,
+one capital letter per capability. In my case, I had the primary key produced
+with Sign (S) and Certify (C) capabilities and a *subkey* with Encrypt (E)
+capability.
+
+I would prefer to have one subkey per responsibility so that I can store my
+primary key offline and only use it when producing new subkeys, revoking
+subkeys, adding new UIDs, or any other key-modification responsibility.
+Originally, I tried having a single subkey with encrypt, sign, and authenticate
+capabilities; however, this is a discouraged practice and caused issues later.
+Instead, we'll be creating an individual subkey per capability.
+
+Given that we already have a subkey for the encrypt capability, we only need to
+create two subkeys: one for sign and one for authenticate. To start, we need to
+open an interactive menu via `gpg --edit-key 6CA6A08DBA640677`. You may need to
+include **--expert** to create/modify keys.
+
+> Alternatively, I could have used an UID such as *chip@senkbeil.org* instead of the primary key ID. There are a variety of ways to specify a user id (UID), which are described on the [official documentation page](https://www.gnupg.org/documentation/manuals/gnupg/Specify-a-User-ID.html).
+
+#### (Optional) Step 7.1: Create sign subkey
+
+We start by being in an interactive CLI where we want to run `addkey` to begin
+the process of adding a new subkey. This **requires** you to have your primary
+key available, it cannot be removed or stubbed.
+
+```
+gpg> addkey
+
+# You may need to enter your password for the primary key here
+```
+
+Like when creating the primary key, we want to specify capabilities. For the
+signing key, this is fairly straightforward using **RSA (sign only)**.
+
+```
+Please select what kind of key you want:
+   (3) DSA (sign only)
+   (4) RSA (sign only)
+   (5) Elgamal (encrypt only)
+   (6) RSA (encrypt only)
+   (7) DSA (set your own capabilities)
+   (8) RSA (set your own capabilities)
+Your selection? 4
+```
+
+Similarly, we need to specify a bit length. I've been using the max of 4096 as
+my Yubikey supports that length key. If you plan to combine your GPG keys with
+your Yubikey(s), make sure to check the maximum length it supports!
+
+```
+RSA keys may be between 1024 and 4096 bits long.
+What keysize do you want? (2048) 4096
+```
+
+Lastly, we need to specify an expiration for a key. Unlike encryption, I want
+to cause my sign (and authenticate) keys to expire after five years.
+
+```
+Please specify how long the key should be valid.
+         0 = key does not expire
+      <n>  = key expires in n days
+      <n>w = key expires in n weeks
+      <n>m = key expires in n months
+      <n>y = key expires in n years
+Key is valid for? (0) 5y
+```
+
+#### (Optional) Step 7.2: Create authenticate subkey
+
+We go through a similar flow for the authenticate key, except we need to
+specify our own capabilities via **RSA (set your own capabilities)**.
+
+```
+gpg> addkey
+
+# You may need to enter your password for the primary key here
+
+Please select what kind of key you want:
+   (3) DSA (sign only)
+   (4) RSA (sign only)
+   (5) Elgamal (encrypt only)
+   (6) RSA (encrypt only)
+   (7) DSA (set your own capabilities)
+   (8) RSA (set your own capabilities)
+Your selection? 8
+```
+
+By default, sign and encrypt capabilities will be selected. I toggled both of
+those off first and then added authenticate.
+
+```
+Possible actions for a RSA key: Sign Encrypt Authenticate
+Current allowed actions: Sign Encrypt
+
+   (S) Toggle the sign capability
+   (E) Toggle the encrypt capability
+   (A) Toggle the authenticate capability
+   (Q) Finished
+
+Your selection? S
+Your selection? E
+Your selection? A
+```
+
+Lastly, we want to specify our bit length and expiration period. I followed the
+same configuration as with the sign subkey.
+
+```
+RSA keys may be between 1024 and 4096 bits long.
+What keysize do you want? (2048) 4096
+
+Please specify how long the key should be valid.
+         0 = key does not expire
+      <n>  = key expires in n days
+      <n>w = key expires in n weeks
+      <n>m = key expires in n months
+      <n>y = key expires in n years
+Key is valid for? (0) 5y
+```
 
 ## What's next?
 
-In [the next post](/posts/applying-gpg-and-yubikey-part-3-encryption), I'll be explaining how I set up [pass](https://passwordstore.org/) and [neomutt](https://neomutt.org/) for encrypting my passwords and email respectively.
+In [the next post](/posts/applying-gpg-and-yubikey-part-3-encryption), I'll be explaining how I set up [pass](https://passwordstore.org/) and [neomutt](https://neomutt.org/) for encrypting passwords and email respectively.
