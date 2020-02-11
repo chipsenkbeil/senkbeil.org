@@ -1,8 +1,8 @@
 +++
-title = "Applying GPG and Yubikey: Part 2 (Setup Primary GPG Key)"
+title = "Applying GPG and Yubikey: Part 2 (Setup GPG Keys)"
 slug = "applying-gpg-and-yubikey-part-2-setup-primary-gpg-key"
 date = "2019-08-16"
-lastmod = "2019-12-10"
+lastmod = "2019-12-15"
 categories = [ "applying" ]
 tags = [ "gpg", "yubikey" ]
 +++
@@ -12,7 +12,9 @@ post](/posts/applying-gpg-and-yubikey-part-1-overview), feel free to check it
 out to get an idea of why and how I started using GPG and Yubikey.
 
 Today we'll be diving into how to set up a new master GPG key and configure it
-for use with the [pass](https://passwordstore.org/) utility.
+for use with the [pass](https://passwordstore.org/) utility. Additionally,
+we'll run through the process to create subkeys with the idea of eventually
+storing these on Yubikeys.
 
 ## Setting up a primary GPG key
 

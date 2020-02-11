@@ -3,6 +3,7 @@ title = "Linux Virtual Monitors with xrandr"
 slug = "linux-virtual-monitors-with-xrandr"
 description = "How and why to configure virtual monitors with xrandr"
 date = "2019-08-14"
+lastmod = "2019-12-15"
 categories = [ "config" ]
 tags = [ "xrandr" ]
 +++
@@ -11,6 +12,9 @@ I recently learned that you can configure virtual monitors with xrandr. There
 are two different ways to use this: treat multiple physical monitors as
 one giant virtual monitor or treat one physical monitor as multiple
 virtual monitors.
+
+> Note that this requires xrandr 1.5.0 or higher, which introduces setmonitor
+> as an option in the CLI.
 
 ## Why do I want to do this?
 
@@ -26,7 +30,7 @@ from a laptop rather than plugging the laptop in directly.
 [This post](https://askubuntu.com/a/998435) highlighted a means to do this
 with xrandr 1.5+ virtual monitors.
 
-Leveraging `xrandr` to print out your display information, you can create
+Leveraging **xrandr** to print out your display information, you can create
 new virtual monitors using `xrandr --setmonitor`.
 
 On my laptop, the output of `xrandr` yielded:
