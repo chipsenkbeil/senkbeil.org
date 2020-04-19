@@ -1,7 +1,7 @@
 +++
 title = "Applying GPG and Yubikey: Part 6 (Setting up Yubikeys)"
 slug = "applying-gpg-and-yubikey-part-6-setting-up-yubikeys"
-date = "2019-08-26"
+date = "2019-10-26"
 categories = [ "applying" ]
 tags = [ "gpg", "yubikey" ]
 draft = true
@@ -17,6 +17,8 @@ signing and certification capabilities.
 Mention use of subkeys to keep separate from primary key
 Mention creating 4096 with individual capabilities
 - Point out issue encountered when gave one subkey multiple capabilities
+
+To prevent subkeys from being removed from your offline .gnupg directory (it's offline, right ;)?), after keytocard make sure you quit without saving. If you use keytocard and then quit and confirm save, the subkeys are removed from local keyring and unless you have a back-up - they're now only on the yubikey without a way to get them back out.
 
 ### Moving my GPG key to YubiKey
 
